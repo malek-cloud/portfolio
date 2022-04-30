@@ -22,6 +22,10 @@
 }
 
 @media (max-width: 600px) {
+    .hello {
+        color: rgb(212, 140, 176);
+        margin-bottom: -10px;
+    }
     .greeting {
         /*  position: fixed;
         top: 40px;
@@ -32,5 +36,6 @@
         color: white;
         font-weight: 600;
         padding: 0px 16px;
+        margin-top: 30px;
     }
 }

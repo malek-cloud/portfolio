@@ -303,7 +303,7 @@
         position: relative;
         min-height: 80vh;
         padding: 50px 10px 0;
-        margin-top: 20px;
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -312,8 +312,8 @@
     }
     .home-container .logo {
         position: inherit;
-        height: 180px;
-        width: 180px;
+        height: 200px;
+        width: 200px;
         display: flex;
         justify-content: center;
         align-items: center;

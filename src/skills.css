@@ -239,27 +239,6 @@
         opacity: 0;
         animation: fade-in 1s ease 1 0.5s forwards;
     }
-    .home-container h2 {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        margin-top: 200px;
-    }
-    .home-container h2 span {
-        font-size: 25px;
-        opacity: 0.8;
-        padding-bottom: 5px;
-        border-bottom: 2px solid var(--color-pri);
-        font-family: "Open Sans Condensed", sans-serif;
-    }
-    .home-container h2 p {
-        font-size: 25px;
-        font-weight: 100;
-        font-family: "Open Sans", sans-serif;
-    }
 }
 
 @media (max-width: 500px) {
@@ -317,45 +296,13 @@
         opacity: 0;
         animation: fade-in 1s ease 1 0.5s forwards;
     }
-    .home-container h2 {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        margin-top: 200px;
-    }
-    .home-container h2 span {
-        font-size: 22px;
-        opacity: 0.8;
-        padding-bottom: 5px;
-        border-bottom: 2px solid var(--color-pri);
-        font-family: "Open Sans Condensed", sans-serif;
-    }
-    .home-container h2 p {
-        font-size: 18px;
-        font-weight: 100;
-        font-family: "Open Sans", sans-serif;
-    }
-    .scroll-down {
-        transform: rotate(90deg);
-        position: absolute;
-        right: -70px;
-        top: 45%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-    }
 }
 
 @media (max-width: 400px) {
     .home-container {
         position: relative;
-        min-height: 100vh;
-        padding: 150px 10px 0;
+        min-height: 80vh;
+        padding: 50px 10px 0;
         margin-top: 20px;
         display: flex;
         flex-direction: column;
@@ -386,8 +333,8 @@
     }
     .home-container .logo .circle {
         position: absolute;
-        height: 65px;
-        width: 65px;
+        height: 55px;
+        width: 55px;
         border-radius: 50%;
         background-color: rgb(4, 4, 44);
         display: flex;
@@ -398,33 +345,12 @@
     }
     .home-container img {
         position: absolute;
-        height: 185px;
-        width: 185px;
+        height: 165px;
+        width: 165px;
         border-radius: 50%;
         border: 3px solid rgb(108, 161, 197);
         transform: translate(-200px);
         opacity: 0;
         animation: fade-in 1s ease 1 0.5s forwards;
-    }
-    .home-container h2 {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        margin-top: 250px;
-    }
-    .home-container h2 span {
-        font-size: 22px;
-        opacity: 0.8;
-        padding-bottom: 5px;
-        border-bottom: 2px solid var(--color-pri);
-        font-family: "Open Sans Condensed", sans-serif;
-    }
-    .home-container h2 p {
-        font-size: 18px;
-        font-weight: 100;
-        font-family: "Open Sans", sans-serif;
     }
 }

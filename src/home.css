@@ -20,3 +20,17 @@
 .developer {
     color: rgb(212, 140, 176);
 }
+
+@media (max-width: 600px) {
+    .greeting {
+        /*  position: fixed;
+        top: 40px;
+        left: 50px;
+        margin-top: 0px; */
+        text-align: center;
+        font-size: 22px;
+        color: white;
+        font-weight: 600;
+        padding: 0px 16px;
+    }
+}

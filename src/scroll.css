@@ -19,3 +19,17 @@
 .scroll {
     margin: 10px 0px;
 }
+
+@media (max-width: 600px) {
+    .rotatedScroll {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        position: absolute;
+        bottom: -5vh;
+        right: 48vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}

@@ -199,7 +199,7 @@
     .home-container .logo {
         position: inherit;
         height: 220px;
-        width: 220px;
+        width: 99vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -256,7 +256,7 @@
     .home-container .logo {
         position: inherit;
         height: 220px;
-        width: 220px;
+        width: 99vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -298,7 +298,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .home-container {
         position: relative;
         min-height: 90vh;

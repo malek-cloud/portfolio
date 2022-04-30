@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+}
+
+body {
+    background-color: rgb(19, 1, 9);
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    animation: move 1s linear infinite forwards;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    background: rgb(212, 140, 176);
+    filter: blur(240px);
+    -webkit-filter: blur(240px);
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 240px;
+    right: 250px;
+    height: 300px;
+    width: 400px;
+    background: rgb(165, 151, 155);
+    filter: blur(280px);
+    -webkit-filter: blur(280px);
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

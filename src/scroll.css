@@ -1,0 +1,21 @@
+.rotatedScroll {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    bottom: 6vh;
+    right: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.line {
+    height: 4vh;
+    border: 1px solid white;
+    width: 2px;
+}
+
+.scroll {
+    margin: 10px 0px;
+}

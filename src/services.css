@@ -106,4 +106,12 @@
         justify-content: center;
         margin-left: 2vw;
     }
+    .serviceBox:hover {
+        background-color: rgba(19, 1, 9, 0.623);
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
 }

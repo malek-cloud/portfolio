@@ -99,7 +99,7 @@
         text-overflow: ellipsis;
     }
     .serviceCenter {
-        margin-top: 14vh;
+        margin-top: 9vh;
         display: flex;
         flex-direction: column;
         align-items: center;

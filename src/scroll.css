@@ -25,7 +25,7 @@
         writing-mode: vertical-rl;
         text-orientation: mixed;
         position: absolute;
-        bottom: -14vh;
+        bottom: 0vh;
         right: 48vw;
         display: flex;
         justify-content: center;

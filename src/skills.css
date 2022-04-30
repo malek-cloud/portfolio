@@ -302,9 +302,8 @@
     .home-container {
         position: relative;
         min-height: 90vh;
-        padding: 50px 10px 0;
+        padding: 20px 0px 0;
         margin-top: 50px;
-        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -323,8 +322,8 @@
     }
     .home-container .logo .hover-show {
         position: absolute;
-        height: 180px;
-        width: 180px;
+        height: 200px;
+        width: 200px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -334,8 +333,8 @@
     }
     .home-container .logo .circle {
         position: absolute;
-        height: 55px;
-        width: 55px;
+        height: 58px;
+        width: 58px;
         border-radius: 50%;
         background-color: rgb(4, 4, 44);
         display: flex;
@@ -346,13 +345,12 @@
     }
     .home-container img {
         position: absolute;
-        height: 185px;
-        width: 185px;
+        height: 180px;
+        width: 180px;
         border-radius: 50%;
         border: 3px solid rgb(108, 161, 197);
         transform: translate(-200px);
         opacity: 0;
         animation: fade-in 1s ease 1 0.5s forwards;
-        -webkit-animation: fade-in 1s ease 1 0.5s forwards;
     }
 }

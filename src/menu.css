@@ -41,7 +41,7 @@
     -o-border-radius: 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .iconMenu:hover {
         transform: scale(1.12);
         background-color: rgb(19, 1, 9);
@@ -72,10 +72,10 @@
         width: fit-content;
         padding: 8px;
         z-index: 9999;
-        height: 38px;
-        width: 36px;
+        height: 40px;
+        width: 40px;
         background-color: rgb(19, 1, 9);
-        margin: 6px 2vw 10px 2vw;
+        margin: 6px 2.1vw 10px 2.1vw;
         cursor: pointer;
     }
 }

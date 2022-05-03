@@ -302,7 +302,7 @@
 @media (max-width: 700px) {
     .home-container {
         position: relative;
-        min-height: 82vh;
+        min-height: 520px;
         padding: 20px 0px 0;
         margin-top: 0px;
         display: flex;
@@ -336,8 +336,8 @@
     }
     .home-container .logo .circle {
         position: absolute;
-        height: 58px;
-        width: 58px;
+        height: 60px;
+        width: 60px;
         border-radius: 50%;
         background-color: rgb(4, 4, 44);
         display: flex;

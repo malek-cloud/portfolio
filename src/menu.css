@@ -73,10 +73,10 @@
         width: fit-content;
         padding: 8px;
         z-index: 9999;
-        height: 36px;
+        height: 38px;
         width: 36px;
         background-color: rgb(19, 1, 9);
-        margin: 2px 2vw 10px 2vw;
+        margin: 6px 2vw 10px 6vw;
         cursor: pointer;
     }
 }

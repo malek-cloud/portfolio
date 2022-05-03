@@ -20,16 +20,17 @@
     margin: 10px 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .rotatedScroll {
         writing-mode: vertical-rl;
         text-orientation: mixed;
-        position: absolute;
-        bottom: -24vh;
-        right: 48vw;
+        position: relative;
         display: flex;
+        width: fit-content;
+        right: 0vw;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        margin-bottom: -4vh;
     }
 }

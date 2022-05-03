@@ -59,10 +59,9 @@
         align-items: center;
         height: fit-content;
         position: relative;
-        top: 34vh;
-        width: 90%;
-        left: 5%;
-        right: 5%;
+        top: 32vh;
+        width: 80%;
+        left: 0%;
         padding: 0px 12px;
         background-color: rgb(19, 1, 9);
         border-radius: 50px;
@@ -76,7 +75,7 @@
         height: 38px;
         width: 36px;
         background-color: rgb(19, 1, 9);
-        margin: 6px 2vw 10px 6vw;
+        margin: 6px 2vw 10px 2vw;
         cursor: pointer;
     }
 }

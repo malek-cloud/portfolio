@@ -7,7 +7,7 @@ import "./index.css"
 function App() {
   return (
   <div className="centerApp">
-      <div className="App">
+      <div className="app">
       <Menu />
       <div>
         <Home />

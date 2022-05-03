@@ -16,3 +16,14 @@ code {
     align-items: center;
     justify-content: center;
 }
+
+.app {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+    }
+}

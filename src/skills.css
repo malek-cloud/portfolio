@@ -188,7 +188,7 @@
     .home-container {
         position: relative;
         min-height: 100vh;
-        padding: 150px 40px;
+        padding: 80px 20px;
         margin-top: 20px;
         display: flex;
         flex-direction: column;
@@ -241,7 +241,8 @@
     }
 }
 
-@media (max-width: 500px) {
+
+/* @media (max-width: 500px) {
     .home-container {
         position: relative;
         min-height: 100vh;
@@ -296,9 +297,9 @@
         opacity: 0;
         animation: fade-in 1s ease 1 0.5s forwards;
     }
-}
+} */
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .home-container {
         position: relative;
         min-height: 90vh;

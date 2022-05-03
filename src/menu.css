@@ -16,7 +16,7 @@
 
 .iconMenu:hover {
     transform: scale(1.12);
-    background-color: rgb(240, 135, 187);
+    background-color: rgba(250, 210, 228, 0.767);
     -webkit-transform: scale(1.12);
     -moz-transform: scale(1.12);
     -ms-transform: scale(1.12);

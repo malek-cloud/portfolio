@@ -1,0 +1,41 @@
+.circleBar {
+    height: 140px;
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 38px;
+    margin-bottom: 10vh;
+    margin-left: 4vw;
+}
+
+.codeSkills {
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+    color: rgb(212, 140, 176);
+    text-align: center;
+}
+
+.seeMore {
+    text-align: center;
+    margin-top: 8vh;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.seeMore:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .skillsGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+        margin-bottom: 10vh;
+    }
+}

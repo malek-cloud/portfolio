@@ -3,6 +3,8 @@ import Home from "./home";
 import Skills from "./skills";
 import ScrollDown from "./scrollDown";
 import Services from "./services";
+import Aboutme from "./aboutme";
+import CodingSkills from "./codingSkills";
 import "./index.css"
 function App() {
   return (
@@ -15,7 +17,11 @@ function App() {
       </div>
       <ScrollDown/>
     </div>
-<Services/>
+    <Aboutme/>
+
+    <Services/>
+    <CodingSkills/>
+
   </div>
   );
 }

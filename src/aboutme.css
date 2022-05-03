@@ -1,0 +1,118 @@
+.aboutmeImage {
+    height: 70vh;
+    /* position: relative;
+    right: -7.8vw; */
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    margin-left: 10vw;
+}
+
+.aboutmePage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    margin-left: -2vw;
+}
+
+.aboutme {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(212, 140, 176);
+    font-weight: 700;
+    margin-top: 20vh;
+    margin-bottom: -6vh;
+}
+
+.description {
+    margin-top: -6vh;
+    width: 36vw;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.topVertLine {
+    border: 2px solid white;
+    height: 12vh;
+}
+
+.topHorizLine {
+    border: 2px solid white;
+    width: 12vh;
+}
+
+.toprectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 16vh;
+    margin-left: -6vh;
+}
+
+.bottomrectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -8vh;
+    margin-left: 4vh;
+}
+
+.descBloc {
+    /*  transform: translate(-200px);
+    opacity: 0;
+    animation: fade-in 1s ease 1 0.5s forwards; */
+}
+
+@keyframes fade-in {
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .text {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-left: 0%;
+    }
+    .aboutmeImage {
+        height: 84vw;
+        display: none;
+    }
+    .aboutme {
+        text-align: center;
+        font-size: 28px;
+        color: rgb(212, 140, 176);
+        font-weight: 700;
+        margin-top: 16vh;
+        margin-bottom: 0vh;
+    }
+    .description {
+        margin-top: -8vh;
+        width: 66vw;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .toprectangle {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 6vh;
+        margin-left: -4vh;
+    }
+    .bottomrectangle {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: -9vh;
+        margin-right: -4vh;
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,75 @@
+.skillsBar {
+    width: 38vw;
+}
+
+.skillsImage {
+    height: 50vh;
+    margin-right: 6vw;
+    margin-top: -2vh;
+}
+
+.mySkills {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 4vw;
+    margin-top: -4vh;
+}
+
+.skillType {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 16px;
+    margin-bottom: 6vh;
+    margin-top: 5vh;
+}
+
+.skillsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.makeCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.typesSlider {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: -5vh;
+}
+
+@media (max-width: 600px) {
+    .makeCol {
+        flex-direction: column-reverse;
+    }
+    .skillType {
+        font-size: 18px;
+        margin: 0px -16px 2px -16px;
+    }
+    .typesSlider {
+        margin-bottom: 6vh;
+        margin-top: -10vh;
+    }
+    .mySkills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10vh;
+        margin-left: 0vw;
+    }
+    .skillsImage {
+        height: 25vh;
+        width: 50vw;
+        margin-right: 2vw;
+        margin-top: 2vh;
+    }
+    .skillsBar {
+        width: 70vw;
+        margin-bottom: 2vh;
+    }
+}

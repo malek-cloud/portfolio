@@ -5,6 +5,7 @@ import ScrollDown from "./scrollDown";
 import Services from "./services";
 import Aboutme from "./aboutme";
 import CodingSkills from "./codingSkills";
+import SkillsBars from "./skillsBars";
 import "./index.css"
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
 
     <Services/>
     <CodingSkills/>
+    <SkillsBars/>
 
   </div>
   );

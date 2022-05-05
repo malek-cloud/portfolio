@@ -4,8 +4,8 @@ import Skills from "./skills";
 import ScrollDown from "./scrollDown";
 import Services from "./services";
 import Aboutme from "./aboutme";
-import CodingSkills from "./codingSkills";
 import SkillsBars from "./skillsBars";
+import GetinTouch from "./getinTouch";
 import "./index.css"
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
     <Aboutme/>
 
     <Services/>
-    {/* <CodingSkills/> */}
-    <SkillsBars/>
+   <SkillsBars/>
+   <GetinTouch/>
 
   </div>
   );

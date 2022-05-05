@@ -34,7 +34,7 @@ function SkillsBars() {
 
   return (
     <div className="skillsPage">
-      <div className="codeSkills">My Skills</div>
+      <div className="codeSkills">And Here Are My Skills</div>
       <div className="makeCol">
       <div className="mySkills">
         <img
@@ -45,12 +45,12 @@ function SkillsBars() {
         />
 
         <div className="skillsBar" data-aos="fade-left">
-          <SkillBar
+        {  <SkillBar
             skills={skills}
             height={"30px"}
             colors={colors}
             animationDuration={1000}
-          />
+          />}
         </div>
       </div>
       <div className="typesSlider">
@@ -77,6 +77,7 @@ function SkillsBars() {
         </svg>
       </div>
       </div>
+      <img className="rocket" src="/images/rocket.gif" alt="" />
     </div>
   );
 }

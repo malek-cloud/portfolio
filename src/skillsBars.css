@@ -69,7 +69,8 @@
         margin-top: 2vh;
     }
     .skillsBar {
-        width: 70vw;
+        width: 80vw;
         margin-bottom: 2vh;
+        overflow-x: hidden;
     }
 }

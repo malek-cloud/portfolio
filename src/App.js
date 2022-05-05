@@ -21,7 +21,7 @@ function App() {
     <Aboutme/>
 
     <Services/>
-    <CodingSkills/>
+    {/* <CodingSkills/> */}
     <SkillsBars/>
 
   </div>

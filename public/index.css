@@ -10,6 +10,7 @@
 body {
     background-color: rgb(19, 1, 9);
     min-height: 100vh;
+    overflow-x: hidden;
     font-family: "Inter", sans-serif;
     animation: move 1s linear infinite forwards;
 }

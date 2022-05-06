@@ -124,6 +124,14 @@
     grid-gap: 10px;
 }
 
+.more {
+    position: relative;
+    left: 30px;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
 @media (max-width: 700px) {
     .projectBoxRight {
         display: flex;
@@ -208,7 +216,7 @@
         left: auto;
         padding: 20px 24px;
         margin-top: 20px;
-        background-color: rgba(27, 35, 51, 0.711);
+        background-color: rgb(27, 35, 51);
         color: whitesmoke;
         z-index: 5;
         border-radius: 6px;

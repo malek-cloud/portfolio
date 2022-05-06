@@ -1,6 +1,32 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./projects.css";
 function Projects() {
+  const [mobile, setMobile]=useState(false)
+
+  const [windowDimenion, detectHW] = useState({
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+  })
+
+  const detectSize = () => {
+    detectHW({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+    })
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', detectSize)
+    if(windowDimenion.winWidth <= 700){
+      setMobile(true)
+    }else{
+      setMobile(false)
+    }
+    console.log( windowDimenion.winWidth + " size")
+    return () => {
+      window.removeEventListener('resize', detectSize)
+    }
+  }, [windowDimenion])
   return (
     <div>
       <div className="projectsTitle"> Some Things I've Built</div>
@@ -9,9 +35,9 @@ function Projects() {
       <iframe
       className="projectImage"
         src="/videos/oyembackoffice.mp4"
-        frameborder="0"
+        frameBorder="0"
         allow="autoplay; encrypted-media"
-        allowfullscreen
+        allowFullScreen
         title="video"
       />
         <div className="projectdetailsLeft">
@@ -41,9 +67,9 @@ function Projects() {
       <iframe
       className="projectImage"
         src="/videos/yummy.mp4"
-        frameborder="0"
+        frameBorder="0"
         allow="autoplay; encrypted-media"
-        allowfullscreen
+        allowFullScreen
         title="video"
       />
         <div className="projectdetailsRight">
@@ -68,9 +94,9 @@ function Projects() {
       <iframe
       className="projectImage"
         src="/videos/oyem.mp4"
-        frameborder="0"
+        frameBorder="0"
         allow="autoplay; encrypted-media"
-        allowfullscreen
+        allowFullScreen
         title="video"
       />
 
@@ -99,9 +125,9 @@ function Projects() {
       <iframe
       className="projectImage"
         src="/videos/pfa.mp4"
-        frameborder="0"
+        frameBorder="0"
         allow="autoplay; encrypted-media"
-        allowfullscreen
+        allowFullScreen
         title="video"
       />
         <div className="projectdetailsRight">
@@ -126,9 +152,9 @@ function Projects() {
       <iframe
       className="projectImage"
         src="/videos/jeux.mp4"
-        frameborder="0"
+        frameBorder="0"
         allow="autoplay; encrypted-media"
-        allowfullscreen
+        allowFullScreen
         title="video"
       />
 
@@ -151,9 +177,9 @@ function Projects() {
       <iframe
       className="projectImage"
         src="/videos/calcul.mp4"
-        frameborder="0"
+        frameBorder="0"
         allow="autoplay; encrypted-media"
-        allowfullscreen
+        allowFullScreen
         title="video"
       />
         <div className="projectdetailsRight">
@@ -164,7 +190,7 @@ function Projects() {
             information about each track. Create and save new playlists of
             recommended tracks based on your existing playlists and more.
           </div>
-          <div className="technologiesRight" style={{marginRight : "-9.5vw"}}>
+          <div className="technologiesRight" style={{marginRight : mobile? "0vw"  : "-9.5vw"}}>
                 <div className="tech">Dart</div>
                 <div className="tech">Flutter</div>
                 <div className="tech">WIX(design)</div>
@@ -254,7 +280,7 @@ function Projects() {
             information about each track. Create and save new playlists of
             recommended tracks based on your existing playlists and more.
           </div>
-          <div className="technologiesRight" style={{marginRight : "-8.5vw"}}>
+          <div className="technologiesRight" style={{marginRight : mobile? "0vw" :  "-8.5vw"}}>
                 <div className="tech">HTML</div>
                 <div className="tech">CSS</div>
                 <div className="tech">VSCode</div>
@@ -294,7 +320,7 @@ function Projects() {
             information about each track. Create and save new playlists of
             recommended tracks based on your existing playlists and more.
           </div>
-          <div className="technologiesRight"  style={{marginRight : "-20.7vw"}}>
+          <div className="technologiesRight"  style={{marginRight : mobile ? "0px" :   "-20.7vw"}} >
                 <div className="tech">Wordpress</div>
                 <div className="tech">Figma</div>
           </div>

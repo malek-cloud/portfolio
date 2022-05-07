@@ -155,10 +155,10 @@ function Projects() {
         onClick={()=>{setSeeMore(!seeMore)}}
       >
         {" "}
-        {mobile && !seeMore ? "See More" : ""}
+        {mobile && !seeMore ? "See More Projects.." : ""}
       </a>
 
-      {seeMore ? (
+      {!mobile || (mobile && seeMore) ? (
         <div id="5">
           <div className="projectBoxLeft">
             <iframe
@@ -388,7 +388,7 @@ function Projects() {
         onClick={()=>{setSeeMore(!seeMore)}}
       >
         {" "}
-        {mobile && seeMore ? "See Less" : ""}
+        {mobile && seeMore ? "See Less.." : ""}
       </a>
     </div>
   );

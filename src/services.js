@@ -47,11 +47,11 @@ function Services() {
       <div className="hireMe"> Hire Me ➡
       <span></span><span></span><span></span><span></span></div> */}
 
-      <div id="foot">
+      <a id="foot" href="#contact">
         <button className="button-os">
           <a href="/">Hire Me ➡</a>
         </button>
-      </div>
+      </a>
     </div>
   );
 }

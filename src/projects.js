@@ -75,12 +75,15 @@ function Projects() {
             </a>
           </div>
           <div className="technologiesLeft5">
+          <div className="tech"><b>Technologies:</b></div>
+
             <div className="tech">Html</div>
             <div className="tech">CSS</div>
-            <div className="tech">Bootstrap</div>
             <div className="tech">React JS</div>
             <div className="tech">Node Js</div>
             <div className="tech">Git</div>
+            <div className="tech">Bootstrap</div>
+
             <div className="tech">VSCode</div>
             <div className="tech">MongoDB</div>
             <div className="tech">REST API</div>
@@ -122,6 +125,8 @@ function Projects() {
             </a>
           </div>
           <div className="technologiesRight5">
+          <div className="tech"><b>Technologies:</b></div>
+
             <div className="tech">Dart</div>
             <div className="tech">Flutter</div>
             <div className="tech">REST API</div>
@@ -180,6 +185,8 @@ function Projects() {
             </a>
           </div>
           <div className="technologiesLeft5">
+          <div className="tech"><b>Technologies:</b></div>
+
             <div className="tech">Dart</div>
             <div className="tech">Flutter</div>
             <div className="tech">Node JS</div>
@@ -215,6 +222,8 @@ function Projects() {
             correct result thanks to a sophisticated comparison algorithm.
           </div>
           <div className="technologiesRight5">
+          <div className="tech"><b>Technologies:</b></div>
+
             <div className="tech">Dart</div>
             <div className="tech">Flutter</div>
             <div className="tech">Python</div>
@@ -255,6 +264,8 @@ function Projects() {
                 application.
               </div>
               <div className="technologiesLeft5">
+          <div className="tech"><b>Technologies:</b></div>
+
                 <div className="tech">Dart</div>
                 <div className="tech">Flutter</div>
                 <div className="tech">VSCode</div>
@@ -281,8 +292,10 @@ function Projects() {
               </div>
               <div
                 className="technologiesRight5"
-                style={{ marginRight: mobile ? "0vw" : "-10.5vw" }}
+                style={{ marginRight: mobile ? "0vw" : "-6.5vw" }}
               >
+          <div className="tech"><b>Technologies:</b></div>
+
                 <div className="tech">Dart</div>
                 <div className="tech">Flutter</div>
                 <div className="tech">WIX(design)</div>
@@ -327,6 +340,8 @@ function Projects() {
                 </a>
               </div>
               <div className="technologiesLeft">
+          <div className="tech"><b>Technologies:</b></div>
+
                 <div className="tech">HTML5</div>
                 <div className="tech">CSS3</div>
                 <div className="tech">Bootstrap</div>
@@ -369,8 +384,10 @@ function Projects() {
               </div>
               <div
                 className="technologiesRight5"
-                style={{ marginRight: mobile ? "0vw" : "3.5vw" }}
+                style={{ marginRight: mobile ? "0vw" : "0vw" }}
               >
+          <div className="tech"><b>Technologies:</b></div>
+
                 <div className="tech">HTML5</div>
                 <div className="tech">CSS3</div>
                 <div className="tech">React JS</div>
@@ -407,6 +424,8 @@ function Projects() {
                 </a>
               </div>
               <div className="technologiesLeft">
+          <div className="tech"><b>Technologies:</b></div>
+
                 <div className="tech">Html</div>
                 <div className="tech">CSS</div>
                 <div className="tech">React JS</div>
@@ -432,8 +451,10 @@ function Projects() {
               </div>
               <div
                 className="technologiesRight"
-                style={{ marginRight: mobile ? "0vw" : "-0.5vw" }}
+                style={{ marginRight: mobile ? "0vw" : "1vw" }}
               >
+          <div className="tech"><b>Technologies:</b></div>
+
                 <div className="tech">HTML</div>
                 <div className="tech">CSS</div>
                 <div className="tech">VSCode</div>
@@ -479,6 +500,8 @@ function Projects() {
                 </a>
               </div>
               <div className="technologiesLeft">
+          <div className="tech"><b>Technologies:</b></div>
+
                 <div className="tech">HTML</div>
                 <div className="tech">CSS</div>
                 <div className="tech">React JS</div>
@@ -505,8 +528,10 @@ function Projects() {
               </div>
               <div
                 className="technologiesRight"
-                style={{ marginRight: mobile ? "0px" : "-9.5vw" }}
+                style={{ marginRight: mobile ? "0px" : "-7vw" }}
               >
+          <div className="tech"><b>Technologies:</b></div>
+
                 <div className="tech">Wordpress</div>
                 <div className="tech">Figma</div>
               </div>

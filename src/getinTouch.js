@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./getInTouch.css";
 import Tappable from "react-tappable";
 import Aos from "aos";
+import emailjs from "@emailjs/browser";
+
 import "aos/dist/aos.css";
 function GetinTouch() {
   const [mobile, setMobile] = useState("");
-
+const form = useRef()
   const [windowDimenion, detectHW] = useState({
     winWidth: window.innerWidth,
     winHeight: window.innerHeight,
@@ -38,13 +40,31 @@ function GetinTouch() {
   const [description, setDescription] = useState("");
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState("");
-  function sendMail() {
+  function sendMail(e) {
+    e.preventDefault();
     setName("");
     setBudget("");
     setDeadline("");
     setDescription("");
     setEmail("");
     setSuccess(true);
+    emailjs
+    .sendForm(
+      "service_ha8epvu",
+      "template_ws0wuhw",
+      form.current,
+      "ObvedbQ0Yg1t8ZMUv"
+            
+    )
+    .then((result) => {
+      console.log(form.current)
+      console.log(result.text);
+  }, (error) => {
+      console.log(error.text);
+      console.log(form.current)
+
+  });
+
     setTimeout(function () {
       setSuccess(false);
     }, 3000);
@@ -57,7 +77,7 @@ function GetinTouch() {
     <div className="touchPage" id="contact" data-aos="fade-right">
       <div className="getInTouch"> Get In Touch</div>
 
-      <form action="">
+      <form ref={form} onSubmit={sendMail}>
         <div className="inlineFormImage">
           <div>
             <div className="inputLabel">Name</div>
@@ -65,6 +85,7 @@ function GetinTouch() {
               className="input"
               type="text"
               placeholder="Name.."
+              name="name"
               value={name}
               onChange={(e) => {
                 setName(e.target.value);
@@ -74,6 +95,7 @@ function GetinTouch() {
             <input
               className="input"
               type="email"
+              name="email"
               placeholder="Email.."
               value={email}
               onChange={(e) => {
@@ -84,6 +106,7 @@ function GetinTouch() {
             <input
               className="input"
               type="number"
+              name="budget"
               placeholder="1000DT.."
               value={budget}
               onChange={(e) => {
@@ -95,6 +118,7 @@ function GetinTouch() {
             <input
               className="input"
               type="date"
+              name="deadline"
               placeholder="DD/MM/YYYY.."
               value={deadline}
               onChange={(e) => {
@@ -108,14 +132,13 @@ function GetinTouch() {
             <div>
               <div className="inputLabel">Project Description</div>
               <textarea
+              name="description"
                 placeholder="Project Description ..."
                 className="textarea"
                 value={description}
                 onChange={(e) => {
                   setDescription(e.target.value);
                 }}
-                name=""
-                id=""
                 cols="46"
                 rows="5"
               ></textarea>
@@ -133,11 +156,11 @@ function GetinTouch() {
           <div></div>
         )}
         {mobile ? (
-          <Tappable className="send" onTap={sendMail}>
+          <Tappable className="send"type="submit"   onTap={sendMail}>
             Send
           </Tappable>
         ) : (
-          <div className="send" onClick={sendMail}>
+          <div className="send" type="submit" onClick={sendMail}>
             Send
           </div>
         )}

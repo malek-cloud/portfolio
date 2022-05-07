@@ -18,6 +18,34 @@
     cursor: pointer;
 }
 
+.done {
+    position: relative;
+    bottom: 36vh;
+    left: 26vw;
+    width: fit-content;
+    border-radius: 50%;
+    background-color: rgba(19, 37, 53, 0.718);
+    padding: 32px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: fading 1s forwards ease-out;
+    -webkit-animation: fading 2s forwards ease-out;
+}
+
+@keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .touchPage {
     display: flex;
     flex-direction: column;
@@ -116,6 +144,11 @@
         margin-bottom: 2vh;
         margin-top: 6vh;
     }
+    .done {
+        position: relative;
+        bottom: 85vh;
+        left: 18%;
+    }
     .touchImage {
         height: 160px;
         margin-left: 0vw;
@@ -128,12 +161,13 @@
     }
     .send {
         text-align: center;
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 700;
         text-decoration: underline;
-        margin-bottom: 8vh;
-        margin-top: -36vh;
-        cursor: pointer;
+        position: relative;
+        bottom: 35vh;
+        left: 40%;
+        cursor: auto;
         transition: 0.5s;
         -webkit-transition: 0.5s;
         -moz-transition: 0.5s;

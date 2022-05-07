@@ -37,6 +37,7 @@ function Projects() {
       <div className="projectsTitle"> Some Things I've Built</div>
       <div className="projectBoxLeft" data-aos="fade-right">
         <iframe
+        muted
           className="projectImageVH"
           src="/videos/oyembackoffice.mp4"
           frameBorder="0"

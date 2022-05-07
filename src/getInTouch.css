@@ -146,13 +146,14 @@
     }
     .done {
         position: relative;
-        bottom: 85vh;
+        bottom: 65vh;
         left: 18%;
     }
     .touchImage {
         height: 160px;
         margin-left: 0vw;
         margin-top: 20vh;
+        margin-bottom: -20vh;
     }
     .lol {
         display: flex;
@@ -165,7 +166,7 @@
         font-weight: 700;
         text-decoration: underline;
         position: relative;
-        bottom: 35vh;
+        bottom: 15vh;
         left: 40%;
         cursor: auto;
         transition: 0.5s;

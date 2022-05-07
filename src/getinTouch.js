@@ -7,7 +7,7 @@ import emailjs from "@emailjs/browser";
 import "aos/dist/aos.css";
 function GetinTouch() {
   const [mobile, setMobile] = useState("");
-const form = useRef()
+  const form = useRef();
   const [windowDimenion, detectHW] = useState({
     winWidth: window.innerWidth,
     winHeight: window.innerHeight,
@@ -40,35 +40,46 @@ const form = useRef()
   const [description, setDescription] = useState("");
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState("");
+  const [empty, setEmpty] = useState("");
   function sendMail(e) {
+    setEmpty("");
     e.preventDefault();
-    setName("");
-    setBudget("");
-    setDeadline("");
-    setDescription("");
-    setEmail("");
-    setSuccess(true);
-    emailjs
-    .sendForm(
-      "service_ha8epvu",
-      "template_ws0wuhw",
-      form.current,
-      "ObvedbQ0Yg1t8ZMUv"
-            
-    )
-    .then((result) => {
-      console.log(form.current)
-      console.log(result.text);
-  }, (error) => {
-      console.log(error.text);
-      console.log(form.current)
+    if ((name || email || description) === "") {
+      setEmpty("Fill The Form");
+      setTimeout(function () {
+        setEmpty("");
+      }, 3000);
+      return;
+    } else {
+      setName("");
+      setBudget("");
+      setDeadline("");
+      setDescription("");
+      setEmail("");
+      setSuccess(true);
+      emailjs
+        .sendForm(
+          "service_ha8epvu",
+          "template_ws0wuhw",
+          form.current,
+          "ObvedbQ0Yg1t8ZMUv"
+        )
+        .then(
+          (result) => {
+            console.log(form.current);
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+            console.log(form.current);
+          }
+        );
 
-  });
-
-    setTimeout(function () {
-      setSuccess(false);
-    }, 3000);
-    console.log("slicking");
+      setTimeout(function () {
+        setSuccess(false);
+      }, 3000);
+      console.log("slicking");
+    }
   }
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -132,7 +143,7 @@ const form = useRef()
             <div>
               <div className="inputLabel">Project Description</div>
               <textarea
-              name="description"
+                name="description"
                 placeholder="Project Description ..."
                 className="textarea"
                 value={description}
@@ -145,7 +156,14 @@ const form = useRef()
             </div>
           </div>
         </div>
-
+        {empty !== "" ? (
+          <div className="done">
+            {empty}
+            <div style={{ fontSize: "30px", textAlign: "center" }}>😥</div>
+          </div>
+        ) : (
+          <div></div>
+        )}
         {success ? (
           <div className="done">
             Thank you for
@@ -156,7 +174,7 @@ const form = useRef()
           <div></div>
         )}
         {mobile ? (
-          <Tappable className="send"type="submit"   onTap={sendMail}>
+          <Tappable className="send" type="submit" onTap={sendMail}>
             Send
           </Tappable>
         ) : (

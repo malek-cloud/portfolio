@@ -29,8 +29,6 @@
 .projectImage {
     height: 50vh;
     width: 28vw;
-    background-color: aqua;
-    opacity: 0.5;
     border-radius: 6px;
     cursor: pointer;
 }
@@ -189,7 +187,8 @@
         margin-left: 5%;
         margin-top: 15vh;
     }
-    .technologiesRight {
+    .technologiesRight,
+    .technologiesRight5 {
         margin-top: 2vh;
         color: rgb(219, 206, 206);
         display: grid;
@@ -199,7 +198,8 @@
         align-items: center;
         font-size: 13px;
     }
-    .technologiesLeft {
+    .technologiesLeft,
+    .technologiesLeft5 {
         margin-top: 2vh;
         color: rgb(219, 206, 206);
         ;
@@ -216,6 +216,24 @@
     .projectImage {
         height: 35vh;
         width: 99%;
+        background-color: transparent;
+        opacity: 1;
+        margin: 20px 0%;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .projectImageVH {
+        height: 26vh;
+        width: 99%;
+        background-color: transparent;
+        opacity: 1;
+        margin: 20px 0%;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .projectImageV {
+        height: 60vh;
+        width: 70%;
         background-color: transparent;
         opacity: 1;
         margin: 20px 0%;
@@ -275,5 +293,13 @@
         font-size: 22px;
         color: white;
         padding-left: 0vw;
+    }
+    .projectsTitle {
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 18vh;
+        margin-bottom: 7vh;
+        color: rgb(212, 140, 176);
+        text-align: center;
     }
 }

@@ -12,6 +12,12 @@
     margin-top: 8vh;
 }
 
+.builtBy {
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
 .touchPage {
     display: flex;
     flex-direction: column;

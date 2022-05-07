@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./getInTouch.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function GetinTouch() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <div className="touchPage" id="contact">
+    <div className="touchPage" id="contact" data-aos="fade-right">
       <div className="getInTouch"> Get In Touch</div>
 
       <form action="">
@@ -99,6 +104,7 @@ function GetinTouch() {
         </svg>
         </a>
       </div>
+      <div className="builtBy">Designed & Built ♥ with passion by <br/> <span style={{color : "rgb(212, 140, 176)"}}>Malek Guedda</span> ©2022</div>
     </div>
   );
 }

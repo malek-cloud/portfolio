@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./projects.css";
+import Aos from "aos"
+import "aos/dist/aos.css"
 function Projects() {
   const [mobile, setMobile] = useState(false);
   const [seeMore, setSeeMore] = useState(false);
@@ -8,7 +10,9 @@ function Projects() {
     winWidth: window.innerWidth,
     winHeight: window.innerHeight,
   });
-
+  useEffect(()=>{
+    Aos.init({duration : 1000})
+}, [])
   const detectSize = () => {
     detectHW({
       winWidth: window.innerWidth,
@@ -29,11 +33,11 @@ function Projects() {
     };
   }, [windowDimenion]);
   return (
-    <div>
+    <div id="projects">
       <div className="projectsTitle"> Some Things I've Built</div>
-      <div className="projectBoxLeft">
+      <div className="projectBoxLeft" data-aos="fade-right">
         <iframe
-          className="projectImage"
+          className="projectImageVH"
           src="/videos/oyembackoffice.mp4"
           frameBorder="0"
           allow="autoplay; encrypted-media"
@@ -48,26 +52,24 @@ function Projects() {
             information about each track. Create and save new playlists of
             recommended tracks based on your existing playlists and more.
           </div>
-          <div className="technologiesLeft">
+          <div className="technologiesLeft5">
             <div className="tech">Html</div>
             <div className="tech">CSS</div>
             <div className="tech">Bootstrap</div>
             <div className="tech">React JS</div>
-            <div className="tech">
-              Node Js <br />
-            </div>
-
-            <div className="tech">Express Js</div>
+            <div className="tech">Node Js</div>
+            <div className="tech">Git</div>
+            <div className="tech">VSCode</div>
             <div className="tech">MongoDB</div>
             <div className="tech">REST API</div>
-            <div className="tech">VSCode</div>
-            <div className="tech">Git</div>
+            <div className="tech">ExpressJs</div>
+
           </div>
         </div>
       </div>
-      <div className="projectBoxRight">
+      <div className="projectBoxRight" data-aos="fade-left">
         <iframe
-          className="projectImage"
+          className="projectImageV"
           src="/videos/yummy.mp4"
           frameBorder="0"
           allow="autoplay; encrypted-media"
@@ -82,7 +84,7 @@ function Projects() {
             information about each track. Create and save new playlists of
             recommended tracks based on your existing playlists and more.
           </div>
-          <div className="technologiesRight">
+          <div className="technologiesRight5">
             <div className="tech">Dart</div>
             <div className="tech">Flutter</div>
             <div className="tech">REST API</div>
@@ -92,9 +94,9 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="projectBoxLeft">
+      <div className="projectBoxLeft" data-aos="fade-right">
         <iframe
-          className="projectImage"
+          className="projectImageV"
           src="/videos/oyem.mp4"
           frameBorder="0"
           allow="autoplay; encrypted-media"
@@ -110,7 +112,7 @@ function Projects() {
             information about each track. Create and save new playlists of
             recommended tracks based on your existing playlists and more.
           </div>
-          <div className="technologiesLeft">
+          <div className="technologiesLeft5">
             <div className="tech">Dart</div>
             <div className="tech">Flutter</div>
             <div className="tech">Node JS</div>
@@ -123,9 +125,9 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div id="4" className="projectBoxRight">
+      <div id="4" className="projectBoxRight" data-aos="fade-left">
         <iframe
-          className="projectImage"
+          className="projectImageV"
           src="/videos/pfa.mp4"
           frameBorder="0"
           allow="autoplay; encrypted-media"
@@ -140,7 +142,7 @@ function Projects() {
             information about each track. Create and save new playlists of
             recommended tracks based on your existing playlists and more.
           </div>
-          <div className="technologiesRight">
+          <div className="technologiesRight5">
             <div className="tech">Dart</div>
             <div className="tech">Flutter</div>
             <div className="tech">Python</div>
@@ -150,9 +152,12 @@ function Projects() {
           </div>
         </div>
       </div>
-      <a href="#5"
+      <a
+        href="#5"
         className="more"
-        onClick={()=>{setSeeMore(!seeMore)}}
+        onClick={() => {
+          setSeeMore(!seeMore);
+        }}
       >
         {" "}
         {mobile && !seeMore ? "See More Projects.." : ""}
@@ -160,9 +165,9 @@ function Projects() {
 
       {!mobile || (mobile && seeMore) ? (
         <div id="5">
-          <div className="projectBoxLeft">
+          <div className="projectBoxLeft" data-aos="fade-right">
             <iframe
-              className="projectImage"
+              className="projectImageV"
               src="/videos/jeux.mp4"
               frameBorder="0"
               allow="autoplay; encrypted-media"
@@ -179,16 +184,16 @@ function Projects() {
                 playlists of recommended tracks based on your existing playlists
                 and more.
               </div>
-              <div className="technologiesLeft">
+              <div className="technologiesLeft5">
                 <div className="tech">Dart</div>
                 <div className="tech">Flutter</div>
                 <div className="tech">VSCode</div>
               </div>
             </div>
           </div>
-          <div className="projectBoxRight">
+          <div className="projectBoxRight" data-aos="fade-left">
             <iframe
-              className="projectImage"
+              className="projectImageV"
               src="/videos/calcul.mp4"
               frameBorder="0"
               allow="autoplay; encrypted-media"
@@ -205,8 +210,8 @@ function Projects() {
                 and more.
               </div>
               <div
-                className="technologiesRight"
-                style={{ marginRight: mobile ? "0vw" : "-9.5vw" }}
+                className="technologiesRight5"
+                style={{ marginRight: mobile ? "0vw" : "-10.5vw" }}
               >
                 <div className="tech">Dart</div>
                 <div className="tech">Flutter</div>
@@ -215,7 +220,7 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="projectBoxLeft">
+          <div className="projectBoxLeft" data-aos="fade-right">
             <img
               src="/images/pfe.png"
               alt="maker skills up"
@@ -247,7 +252,7 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="projectBoxRight">
+          <div className="projectBoxRight" data-aos="fade-left">
             <img
               src="/images/portfolio.png"
               alt="portoflio malek"
@@ -263,7 +268,7 @@ function Projects() {
                 playlists of recommended tracks based on your existing playlists
                 and more.
               </div>
-              <div className="technologiesRight">
+              <div className="technologiesRight5"  style={{ marginRight: mobile ? "0vw" : "3.5vw" }}>
                 <div className="tech">HTML5</div>
                 <div className="tech">CSS3</div>
                 <div className="tech">React JS</div>
@@ -273,7 +278,7 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="projectBoxLeft">
+          <div className="projectBoxLeft" data-aos="fade-right">
             <img
               src="/images/library.jpg"
               alt="library project"
@@ -300,7 +305,7 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="projectBoxRight">
+          <div className="projectBoxRight" data-aos="fade-left">
             <img
               src="/images/makerAcademy.jpg"
               alt="maker Academy"
@@ -318,7 +323,7 @@ function Projects() {
               </div>
               <div
                 className="technologiesRight"
-                style={{ marginRight: mobile ? "0vw" : "-8.5vw" }}
+                style={{ marginRight: mobile ? "0vw" : "-0.5vw" }}
               >
                 <div className="tech">HTML</div>
                 <div className="tech">CSS</div>
@@ -326,7 +331,7 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="projectBoxLeft" id="12">
+          <div className="projectBoxLeft" id="12" data-aos="fade-right">
             <img
               src="/images/dashboad.png"
               alt="Dashboard"
@@ -353,7 +358,7 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="projectBoxRight">
+          <div className="projectBoxRight" data-aos="fade-left">
             <img
               src="/images/cci.png"
               alt="portoflio malek"
@@ -371,21 +376,23 @@ function Projects() {
               </div>
               <div
                 className="technologiesRight"
-                style={{ marginRight: mobile ? "0px" : "-20.7vw" }}
+                style={{ marginRight: mobile ? "0px" : "-9.5vw" }}
               >
                 <div className="tech">Wordpress</div>
                 <div className="tech">Figma</div>
               </div>
             </div>
           </div>
-       
         </div>
       ) : (
         <div></div>
       )}
-         <a href={"#4"}
+      <a
+        href={"#4"}
         className="more"
-        onClick={()=>{setSeeMore(!seeMore)}}
+        onClick={() => {
+          setSeeMore(!seeMore);
+        }}
       >
         {" "}
         {mobile && seeMore ? "See Less.." : ""}

@@ -9,7 +9,7 @@
     font-size: 30px;
     color: rgb(212, 140, 176);
     font-weight: 700;
-    margin-top: 12vh;
+    margin-top: 8vh;
 }
 
 .touchPage {
@@ -17,6 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 22vh;
 }
 
 .input {

@@ -1,5 +1,5 @@
 .projectsTitle {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
     margin-top: 18vh;
     margin-bottom: 7vh;
@@ -11,9 +11,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65vw;
+    width: 58vw;
     margin-left: 10vw;
-    margin-top: 15vh;
+    margin-top: 20vh;
 }
 
 .projectBoxLeft {
@@ -21,16 +21,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65vw;
-    margin-left: 5vw;
-    margin-top: 15vh;
+    width: 58vw;
+    margin-left: 6vw;
+    margin-top: 20vh;
 }
 
 .projectImage {
     height: 50vh;
-    width: 24vw;
+    width: 28vw;
     background-color: aqua;
     opacity: 0.5;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.projectImageV {
+    height: 85vh;
+    width: 20vw;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.projectImageVH {
+    height: 45vh;
+    width: 100vw;
     border-radius: 6px;
     cursor: pointer;
 }
@@ -58,19 +72,19 @@
     font-weight: 800;
     font-size: 20px;
     color: white;
-    padding-right: 5.5vw;
+    padding-right: 4vw;
 }
 
 .projecTitleLeft {
     font-weight: 800;
     font-size: 20px;
     color: white;
-    padding-left: 6vw;
+    padding-left: 4vw;
 }
 
 .projectDescRight {
     position: relative;
-    right: 5vw;
+    right: 3.5vw;
     padding: 20px 24px;
     margin-top: 20px;
     background-color: rgb(27, 35, 51);
@@ -86,10 +100,10 @@
 
 .projectDescLeft {
     position: relative;
-    left: 5vw;
+    left: 3.5vw;
     padding: 20px 24px;
     margin-top: 20px;
-    background-color: rgba(27, 35, 51, 0.711);
+    background-color: rgb(27, 35, 51);
     color: whitesmoke;
     z-index: 5;
     border-radius: 6px;
@@ -104,21 +118,45 @@
     margin-top: 3vh;
     color: rgb(219, 206, 206);
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-    margin-right: 5.5vw;
+    margin-right: 1.5vw;
     /*  justify-content: space-between; */
     align-items: center;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .technologiesLeft {
     margin-top: 3vh;
     color: rgb(219, 206, 206);
-    margin-left: 6vw;
+    margin-left: 4.5vw;
     /*  justify-content: space-between; */
     align-items: center;
-    font-size: 15px;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.technologiesRight5 {
+    margin-top: 3vh;
+    color: rgb(219, 206, 206);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    margin-right: 3.5vw;
+    /*  justify-content: space-between; */
+    align-items: center;
+    font-size: 14px;
+}
+
+.technologiesLeft5 {
+    margin-top: 3vh;
+    color: rgb(219, 206, 206);
+    margin-left: 4.5vw;
+    /*  justify-content: space-between; */
+    align-items: center;
+    font-size: 14px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;

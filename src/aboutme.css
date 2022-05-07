@@ -4,6 +4,34 @@
     right: -7.8vw; */
 }
 
+.makeSthg a {
+    text-align: center;
+    color: rgb(107, 126, 167);
+    margin-left: -30px;
+    font-size: 22px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.makeSthg:hover {
+    transition: 0.5s;
+    transform: translateY(-6px) scaleX(1.05);
+    cursor: pointer;
+    -webkit-transform: translateY(-6px) scaleX(1.05);
+    -moz-transform: translateY(-6px) scaleX(1.05);
+    -ms-transform: translateY(-6px) scaleX(1.05);
+    -o-transform: translateY(-6px) scaleX(1.05);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
 .text {
     display: flex;
     align-items: center;
@@ -29,9 +57,10 @@
 
 .description {
     margin-top: -6vh;
-    width: 36vw;
+    width: 38vw;
     font-size: 20px;
     line-height: 30px;
+    padding-right: 2vw;
 }
 
 .topVertLine {

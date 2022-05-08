@@ -117,6 +117,7 @@ button:hover {
     left: 0;
     right: 0;
     bottom: 3vh;
+    font-size: 25px;
     margin: auto;
     background-color: rgb(250, 210, 228);
     border: none;

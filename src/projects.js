@@ -27,7 +27,6 @@ function Projects() {
     } else {
       setMobile(false);
     }
-    console.log(windowDimenion.winWidth + " size");
     return () => {
       window.removeEventListener("resize", detectSize);
     };

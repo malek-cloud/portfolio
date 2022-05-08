@@ -29,7 +29,6 @@ function GetinTouch() {
     } else {
       setMobile(false);
     }
-    console.log(windowDimenion.winWidth + " size");
     return () => {
       window.removeEventListener("resize", detectSize);
     };
@@ -44,8 +43,14 @@ function GetinTouch() {
   function sendMail(e) {
     setEmpty("");
     e.preventDefault();
-    if ((name || email || description) === "") {
+    if (( description === "") || ( name === "")  || ( email === "")) {
       setEmpty("Fill The Form");
+      setTimeout(function () {
+        setEmpty("");
+      }, 3000);
+      return;
+    }else if(budget < 0){
+      setEmpty("valid budget plz");
       setTimeout(function () {
         setEmpty("");
       }, 3000);
@@ -66,24 +71,20 @@ function GetinTouch() {
         )
         .then(
           (result) => {
-            console.log(form.current);
-            console.log(result.text);
+           /*  console.log(form.current);
+            console.log(result.text); */
           },
           (error) => {
-            console.log(error.text);
-            console.log(form.current);
+            /* console.log(error.text);
+            console.log(form.current); */
           }
         );
 
       setTimeout(function () {
         setSuccess(false);
       }, 3000);
-      console.log("slicking");
     }
   }
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
   return (
     <div className="touchPage" id="contact" data-aos="fade-right">
       <div className="getInTouch"> Get In Touch</div>

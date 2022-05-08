@@ -48,9 +48,7 @@ function Services() {
       <span></span><span></span><span></span><span></span></div> */}
 
       <a id="foot" href="#contact">
-        <button className="button-os">
-          <a href="/">Hire Me ➡</a>
-        </button>
+        <button className="button-os">Hire Me ➡</button>
       </a>
     </div>
   );

@@ -3,7 +3,6 @@ import "./skills.css";
 function Skills() {
   const [active, setActive] = useState(false);
   function toggleClass() {
-    console.log("click")
    setActive(!active)
   }
   return (

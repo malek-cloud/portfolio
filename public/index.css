@@ -15,6 +15,23 @@ body {
     animation: move 1s linear infinite forwards;
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(212, 140, 176);
+}
+
+body::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-width: thin;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;

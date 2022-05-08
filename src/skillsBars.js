@@ -69,7 +69,7 @@ function SkillsBars() {
   ];
   const skills6 = [
     { type: "Numpy", level: 90 },
-    { type: "Scikit-Learn", level: 70 },
+    { type: "Scikit-learn", level: 70 },
     { type: "Matplotlib", level: 80 },
     { type: "Pandas", level: 85 },
     { type: "TensorFlow", level: 40 },

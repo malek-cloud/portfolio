@@ -3,7 +3,7 @@ import "./getInTouch.css";
 import Tappable from "react-tappable";
 import Aos from "aos";
 import emailjs from "@emailjs/browser";
-
+import Validator from "validator"
 import "aos/dist/aos.css";
 function GetinTouch() {
   const [mobile, setMobile] = useState("");
@@ -40,7 +40,7 @@ function GetinTouch() {
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState("");
   const [empty, setEmpty] = useState("");
-  function sendMail(e) {
+  const sendMail =  (e) => {
     setEmpty("");
     e.preventDefault();
     if (( description === "") || ( name === "")  || ( email === "")) {
@@ -49,7 +49,14 @@ function GetinTouch() {
         setEmpty("");
       }, 3000);
       return;
-    }else if(budget < 0){
+    } else if(!Validator.isEmail(email)){
+      setEmpty("Invalid Email");
+      setTimeout(function () {
+        setEmpty("");
+      }, 3000);
+      return;
+    }
+    else if(budget < 0){
       setEmpty("valid budget plz");
       setTimeout(function () {
         setEmpty("");

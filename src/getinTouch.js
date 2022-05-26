@@ -226,7 +226,7 @@ function GetinTouch() {
           </svg>
         </a>
         <a
-          href="https://www.linkedin.com/in/guedda-malek-a1713119a/"
+          href="https://www.linkedin.com/in/malek-guedda-a1713119a/"
           rel="noreferrer"
           target="_blank"
         >
